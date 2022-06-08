@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+div{
+    background-color: chocolate;
+    margin: 10px auto;
+    width: 60%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+h4{
+    padding-top: 20px;
+}
+
+a{
+    text-decoration-color: blanchedalmond;
+    color: black;
+}
+
+a:hover{
+    color: blanchedalmond;
+    text-decoration-color: black;
+}
+
+input{
+    height: 15%;
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}

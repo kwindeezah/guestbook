@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+.body{
+    background-color: brown;
+}
+
+.form-class{
+    margin: 10px auto;
+    background-color: olive;
+    width: 500px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.form-group{
+    margin: 2%;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    height: 40px;
+    width: 98%;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.comment{
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    height: 90px;
+    width: 60%;
+    outline: none;
+}
+
+.submit{
+    background-color: brown;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: burlywood;
+    color: black;
+}
