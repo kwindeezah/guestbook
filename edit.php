@@ -2,23 +2,17 @@
 
 include('config.php');
 
-if (isset($_GET['ed'])){  
-		$id = $_GET['ed'];
+if (isset($_GET['id'])){  
+		$id = $_GET['id'];
 		$update = true;
 		$record = mysqli_query($conn, "SELECT * FROM guest_entry WHERE id=$id");
-
-
-        // foreach(explode("\n", $record) as $rData){ 
-        //     $data = explode(",", $rData);
-		
-        if (count(array($record)) == 1 ) {
+        if (mysqli_num_rows($record) > 0 ) {
 			$n = mysqli_fetch_array($record);
-			$name = $n['name'];
-			$address = $n['address'];
+			$comment = $n['comment'];
+            echo '<form method="post" action="edit_entry.php">' ;
+            echo '<input type="hidden" name="id" value="'. $id . '" >';
+            echo  '<textarea name="comment" >' . $comment . '</textarea><br><button class="btn" type="submit" name="edit" >Edit</button>';
+            echo '</form>';
 		}
     }
-    ?>
-    <html>
-    
-    <input type="text" name="comment" value="<?php echo $comment;?>"><br>
-    <button class="btn" type="submit" name="edit" >Edit</button> </html>
+?>
