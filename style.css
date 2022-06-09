@@ -52,6 +52,51 @@ input{
 }
 
 .submit:hover{
-    background-color: burlywood;
+    background-color: blanchedalmond;
     color: black;
+}
+
+table{
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: bisque;
+    padding: 10px;
+}
+tr {
+    border-bottom: 1px solid #cbcbcb;
+}
+th, td{
+    height: 30px;
+    padding: 2px;
+}
+tr:hover {
+    background: #F5F5F5;
+}
+
+.edit-btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    background: green;
+    color: white;
+    border-radius: 3px;
+}
+
+.edit-btn:hover{
+    background: white;
+    color: green;
+}
+
+.del-btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    background: red;
+}
+
+.del-btn:hover{
+    background: white;
+    color: red;
 }
