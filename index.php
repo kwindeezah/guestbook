@@ -25,8 +25,6 @@
         <label for="comment">Comment:</label><br>
         <textarea name="comment" placeholder="Write in your comment" class="comment" required></textarea><br>
         </div>
-        <!-- <div class=”g-recaptcha” data-sitekey=”6Lf40FggAAAAALVtaSdIUX4qK2JaCSqTEfhC0js7”></div>
-        <div class="form-group"> -->
         <input type="submit" name="submit" value="Sign Guestbook" class="submit">
         </div>
     </form>
