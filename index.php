@@ -51,7 +51,7 @@ $result = mysqli_query($conn, "SELECT * FROM guest_entry ORDER BY id");?>
             <td><?php echo $dateTime;?></td>
             <td><?php echo $comment;?></td>
             <td><a href="edit.php?id=<?php echo $guestData['id'] ?>" class="edit-btn">Edit</a></td>
-            <td><a href="delete.php?id=<?php echo $guestData['id'] ?>" class="del-btn">Delete</a></td>
+            <td><a href="delete.php?id=<?php echo $guestData['id'] ?>" onclick="return confirm('Are you sure you want to delete this?')" class="del-btn">Delete</a></td>
    </tr>
         <?php } ?>
 </table>
