@@ -18,10 +18,10 @@ if (isset($_GET['id'])){
             echo '<form method="post" action="edit_entry.php">' ;
             echo '<input type="hidden" name="id" value="'. $id . '" >';
             echo '<h3>Edit Entry</h3>';
-            echo'<label for="name">Name:</label><br>';
-            echo  '<input name="name" class="edit-name" value="' . $name . '"><br>';
-            echo'<label for="comment">Comment:</label><br>';
-            echo  '<textarea name="comment" class="edit-comment">' . $comment . '</textarea><br><br><button class="btn" type="submit" name="edit" >Edit</button>';
+            echo '<label for="name">Name:</label><br>';
+            echo '<input name="name" class="edit-name" value="' . $name . '"><br>';
+            echo '<label for="comment">Comment:</label><br>';
+            echo '<textarea name="comment" class="edit-comment">' . $comment . '</textarea><br><br><button class="btn" type="submit" name="edit" >Edit</button>';
             echo '</form>';
 		}
     }
